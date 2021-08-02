@@ -1,0 +1,73 @@
+<!-- CR: WHY?, also missing meta content type - hence not working -->
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body onload="initGame()">
+    <div class="title"></div>
+    <div class="top-screen">
+        <div class="life"></div>
+        <button class="hint hint1" data-i="1" onclick="clickHint(this)"></button>
+        <button class="hint hint2" data-i="2" onclick="clickHint(this)"></button>
+        <button class="hint hint3" data-i="3" onclick="clickHint(this)"></button>
+        <button class="safe safe1" data-i="1" onclick="clickSafe(this)"></button>
+        <button class="safe safe2" data-i="2" onclick="clickSafe(this)"></button>
+        <button class="safe safe3" data-i="3" onclick="clickSafe(this)"></button>
+        <button class="undo" onclick="undoLastMove()"></button>
+        <button class="manually" onclick="setManually()"></button>
+        <div class="check-box">
+            <header>Choose Level</header>
+            <input class="selection" onclick="setBoardSize(this)" type="radio" name="4" id="4">
+            <label for="4">Easy</label>
+            <input class="selection" onclick="setBoardSize(this)" type="radio" name="8" id="8">
+            <label for="8">Hard</label>
+            <input class="selection" onclick="setBoardSize(this)" type="radio" name="12" id="12">
+            <label for="12">EXTREAM</label>
+        </div>
+    </div>
+    <div class="info">
+        <div class="timer">00:00</div>
+        <button onclick="initGame()" class="start-game"></button>
+        <div class="flags"></div>
+    </div>
+    <div class="msg"></div>
+    <!-- <div class="board-container">
+    </div> -->
+    <table></table>
+    <table class="records">
+        <tbody>
+            <tr>
+                <td>LEVEL</td>
+                <td>RECORD</td>
+                <!-- <td>NAME</td> -->
+            </tr>
+            <tr>
+                <td>EASY</td>
+                <td class="easy-score">infinity</td>
+                <!-- <td class="easy-name">notplayed</td> -->
+            </tr>
+            <tr>
+                <td>HARD</td>
+                <td class="hard-score">infinity</td>
+                <!-- <td class="hard-name">notplayed</td> -->
+            </tr>
+            <tr>
+                <td>EXTREAM</td>
+                <td class="extream-score">infinity</td>
+                <!-- <td class="extream-name">notplayed</td> -->
+            </tr>
+        </tbody>
+
+    </table>
+    <footer>Dese Bezunech</footer>
+    <!-- <div class="place">Dese Bezunech</div> -->
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+</body>
+
+</html>
