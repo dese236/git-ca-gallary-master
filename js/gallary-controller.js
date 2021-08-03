@@ -47,7 +47,7 @@ function createModals() {
                 <!-- Project Details Go Here -->
                 <h2>${proj.name}</h2>
                 <p class="item-intro text-muted">${proj.title}</p>
-                <img class="img-fluid d-block mx-auto" src="img/myImages/${proj.id}.JPG" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/myImages/${proj.id}.jpg" alt="">
                 <p>${proj.desc}</p>
                 <ul class="list-inline">
                   <li><button onclick="onOpenProj('${proj.url}')" target="blank">go to project</button></li>
